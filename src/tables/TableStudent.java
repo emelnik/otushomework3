@@ -15,8 +15,8 @@ public class TableStudent extends TableAbs implements ITable{
                 .execute("create table Student (id int NOT NULL AUTO_INCREMENT, id_group int, FIO varchar(100), SEX varchar(10), PRIMARY KEY (id));",false);
     }
 
-    public void insertDataInStudent(String id_group, String FIO, String SEX) throws SQLException {
-        idbExecutor.execute(String.format("insert into Student (id_group, FIO, SEX) values(%s, '%s', '%s')",id_group,FIO,SEX), false);
+    public void insertDataInStudent(String id_group, String fio, String sex) throws SQLException {
+        idbExecutor.execute(String.format("insert into Student (id_group, FIO, SEX) values(%s, '%s', '%s')", id_group, fio, sex), false);
     }
 
     public void countStudents() throws SQLException {

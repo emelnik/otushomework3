@@ -15,8 +15,8 @@ public class TableGroup_Student extends TableAbs{
                 .execute("create table Group_Student (id int NOT NULL AUTO_INCREMENT, id_curator int, Name varchar(100), PRIMARY KEY (id));",false);
     }
 
-    public void insertDataInGroupStudent(String id_curator, String Name_Group) throws SQLException {
-        idbExecutor.execute(String.format("insert into Group_Student (id_curator, Name) values('%s', '%s')", id_curator, Name_Group), false);
+    public void insertDataInGroupStudent(String id_curator, String name_group) throws SQLException {
+        idbExecutor.execute(String.format("insert into Group_Student (id_curator, Name) values('%s', '%s')", id_curator, name_group), false);
     }
 
     public void changeCuratorGroup(String idGroup, String curatorId) throws SQLException {

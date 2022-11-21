@@ -2,22 +2,22 @@ package dob;
 
 public class Student {
 
-    public Student(String FIO, String SEX, int id_group){
-        this.FIO = FIO;
-        this.SEX = SEX;
+    public Student(String fio, String sex, int id_group){
+        this.fio = fio;
+        this.sex = sex;
         this.id_group = id_group;
     }
 
-    private String FIO;
-    private String SEX;
+    private String fio;
+    private String sex;
     private int id_group;
 
-    public String getFIO() {
-        return FIO;
+    public String getFio() {
+        return fio;
     }
 
-    public String getSEX() {
-        return SEX;
+    public String getSex() {
+        return sex;
     }
 
     public int getId_group() {
